@@ -2,8 +2,10 @@ abstract class species
 {
 	public abstract void dog();
 	public abstract void cat();
+	//public abstract void area();
 }
-public class animals extends species
+
+public class animals extends species implements location
 {
 	public void dog()
 	{
@@ -12,5 +14,9 @@ public class animals extends species
 	public void cat()
 	{
 		System.out.println("hello i am a cat");
+	}
+	public void area()
+	{
+		System.out.println("Columbus");
 	}
 }
